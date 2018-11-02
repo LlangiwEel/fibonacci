@@ -8,18 +8,15 @@ class App extends Component {
       xNumber: 0,
       yNumber: 0,
       divEquals: {
-        display: 'hidden',
         height: 0,
         width: 0,
       },
       divPlusOne: {
-        display: 'hidden',
         height: 0,
         width: 0,
         zIndex: -1
       },
       divMinusOne: {
-        display: 'hidden',
         height: 0,
         width: 0,
         zIndex: 1
@@ -70,8 +67,8 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <input className="x" onChange={this.changeX}/>
-        <input className="y" onChange={this.changeY}/>
+        <input className="input" onChange={this.changeX}/>
+        <input className="input" onChange={this.changeY}/>
         <button onClick={this.changeRatio}>Create</button>
         <div className="rectangle" id="divEquals" style={this.state.divEquals}><p>{this.state.divEquals.width}pixels x {this.state.divEquals.height}pixels</p></div>
         <div className="rectangle" id="divPlusOne" style={this.state.divPlusOne}><p>{this.state.divPlusOne.width}pixels x {this.state.divPlusOne.height}pixels</p></div>

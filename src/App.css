@@ -1,3 +1,7 @@
+.input {
+  margin: 20px;
+}
+
 .rectangle {
   position: absolute;
   border: 3px solid black;
@@ -5,7 +9,9 @@
 }
 
 .rectangle p {
+  display: hidden;
   position: absolute;
   bottom: 0;
   right: 0;
+  font-family: helvetica;
 }
